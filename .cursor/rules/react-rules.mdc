@@ -1,8 +1,6 @@
 ---
-globs: *.tsx,*.ts,*.css
-description: React component patterns, TypeScript conventions, and styling standards
+alwaysApply: false
 ---
-
 # React Frontend Development Standards
 
 ## 🏗️ Component Structure & TypeScript
@@ -101,15 +99,15 @@ export default function RootLayout({
   alt="Next.js logo"
   width={180}
   height={38}
-  priority  // For above-the-fold images
-/>
-
-// ✅ Good: Decorative icon
+  priority  rative icon
 <Image
   aria-hidden
   src="/file.svg"
   alt="File icon"
-  width={16}
+  width={16}// For above-the-fold images
+/>
+
+// ✅ Good: Deco
   height={16}
 />
 ```
